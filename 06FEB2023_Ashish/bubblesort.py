@@ -30,7 +30,7 @@ def bubbleace(x):
                 x[j] = n 
                  #Printing of value of array
              print("Sorting of",x)
-#Function to perform bubble sorting
+#Function to perform bubble sorting in decending order
 def bubbledec(x):
     l = len(x)-1
     k = len(x)
