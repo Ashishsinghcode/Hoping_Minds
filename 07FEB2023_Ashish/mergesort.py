@@ -6,19 +6,17 @@
 def mergesort(arr):
     if len(arr) > 1:
 
-        #  r is the point where the arr is divided into two subarrays
+        #  M is the middle point where the arr is divided into two subarrays
         M = len(arr)//2
         L = arr[:M]
         R = arr[M:]
         
-       
         # Sort the two parts
         mergesort(L)
         mergesort(R)
-
+        
         i = j = k = 0
 
-        
         # elements  L and M and place them in the correct position
         while i < len(L) and j < len(R):
             if L[i] < R[j]:
