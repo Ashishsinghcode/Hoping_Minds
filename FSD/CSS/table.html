@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+    table,th,td{
+        border:2px solid;
+        border-collapse:collapse;
+        text-align: center;
+        padding: 3px;
+    }
+    
+    #colg{
+        background-color: aqua;
+    }
+    #colg2{
+        background-color: bisque;
+    }
+    #colg3{
+        background-color: blueviolet;
+    }
+    
+</style>
+<body>
+   
+    <table>
+        <colgroup id="colg">
+            <col span="2">
+            <col id="colg2" span="2">
+            <col id="colg3" span="2">
+        </colgroup>
+        <rowgroup>
+            <col id="rowset" span="3">
+        </rowgroup>
+        <tr>
+            <th colspan="5">Trainers</th>
+        </tr>
+        <tr>
+            <th colspan="2">FSD Trainer</th>
+            <th>Softskill Trainer</th>
+            <th>DS Trainer</th>
+            <th>Aptitude Trainer</th>
+            <th>Aptitude Trainer</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Aastha</td>
+            <td>Anita</td>
+            <td>Sangeeta</td>
+            <td>Somsirsa</td>
+            <td>Balwinder</td>
+            <td>Balwinder</td>
+        </tr>
+        <tr>
+            <td>Aastha</td>
+            <td>Sangeeta</td>
+            <td>Somsirsa</td>
+            <td>Balwinder</td>
+            <td>Balwinder</td>
+        </tr>
+        <tr>
+            <td>Aastha</td>
+            <td>Sangeeta</td>
+            <td>Astha</td>
+            <td>Balwinder</td>
+            <td>Balwinder</td>
+            <td>Balwinder</td>
+        </tr> 
+       
+    </table>
+</body>
+</html>
