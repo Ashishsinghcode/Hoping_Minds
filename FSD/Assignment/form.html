@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+<style>
+    fieldset{
+        width:400px;
+    }
+    legend{
+        color: red;
+    }
+    .quali{
+        
+        width: 400px;
+    }
+    textarea{
+        width: 170px;
+        height: 85px;
+    }
+    .but{
+        width:100px;
+        height:30px;
+        
+        
+    }
+    .per{
+        height: 145px;
+    }
+    img{
+        width: 100px;
+        border: 2px solid;
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <td style="text-align: center;">
+                <fieldset>
+                    <legend>Profile picture</legend>
+                    <img src="../Images/profile-icon-design-free-vector.jpg" alt="Error">
+                    <input style="margin-left:100px; margin-top: 10px;" type="file" name="" id="">
+                </fieldset>
+                </td>
+            <td>
+                <fieldset class="per">
+                    <legend>Personel Details</legend>
+                    <table >
+                        <tr>
+                            <td><label>Name</label></td>
+                            <td><input  type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Father's name</label></td>
+                            <td><input  type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Mother's name</label></td>
+                            <td><input  type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Date of birth</label></td>
+                            <td><input  type="date"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </td>
+           
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Communication Details</legend>
+                        <table>
+                            <tr>
+                                <td><label>Hno./Flat no.</label></td>
+                                <td><input  type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Street</label></td>
+                                <td><input  type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label>City</label></td>
+                                <td><input  type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label>State</label></td>
+                                <td><input  type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Pin</label></td>
+                                <td><input  type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>Mobile</td>
+                                <td><input  type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Email</label></td>
+                                <td><input  type="email"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Telephone</label></td>
+                                <td><input  type="text"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+                <td>
+                <fieldset class="quali">
+                    <legend>Qualification Details</legend>
+                    <table>
+                        <tr>
+                            <td><label>Matriculation</label></td>
+                            <td><input  type="text" placeholder="%"></td>
+                        </tr>
+                        <tr>
+                            <td>Intermediate</td>
+                            <td><input  type="text" placeholder="%"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Graduation</label></td>
+                            <td><input  type="text" placeholder="%"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Post-Graduation</label></td>
+                            <td><input  type="email" placeholder="%"></td>
+                        </tr>
+                        <tr>
+                            <td colspan=><label>Extra Qualification</label></td>
+                            <td colspan="2"><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                </td>
+                
+            </tr>
+        </tr>
+        <tr style="text-align:center;">
+            <td>
+                <input class="but" type="submit" value="Submit">
+                <input class="but" type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+   
+</body>
+</html>
