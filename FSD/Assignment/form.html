@@ -12,7 +12,7 @@
         border-radius: 10px;
     }
     legend{
-        color: red;
+        color:forestgreen;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     .quali{
@@ -40,9 +40,30 @@
         border: 2px solid;
         border-radius: 50%;
     }
+    .col{
+        color: green;
+        text-shadow: 0 0 5px black;
+    }
+    .coll{
+        color: white;
+        text-shadow: 0 0 5px black;
+    }
+    label{
+        color:green
+    }
+    body{
+        padding-left: 200px;
+    }
+    
 </style>
-<body>
+<body >
     <table>
+        <tr>
+            <td colspan="2" style="text-align: center; font-size: x-large;"><h1><span class="col">Hop</span><span class="coll">i</span><span class="col">ng M</span><span class="coll fl">i</span><span class="col">nds</span></h1></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center; font-size: large;"><h2><u>Registration Form</u></h2></td>
+        </tr>
         <tr>
             <td style="text-align: center;">
                 <fieldset>
@@ -101,14 +122,25 @@
                             </tr>
                             <tr>
                                 <td><label>State</label></td>
-                                <td><input  type="text"></td>
+                                <td><input  type="text" list="state"></td>
+                                <datalist id="state">
+                                    <option value="Assam">
+                                    <option value="Andhra pradesh">
+                                    <option value="Punjab">
+                                    <option value="Uttar pradesh">
+                                    <option value="Bihar">
+                                    <option value="Rajasthan">
+                                    <option value="Haryana">
+                                    <option value="Kerela">
+                                    <option value="Maharastra">
+                                </datalist>
                             </tr>
                             <tr>
                                 <td><label>Pin</label></td>
                                 <td><input  type="text"></td>
                             </tr>
                             <tr>
-                                <td>Mobile</td>
+                                <td><label>Mobile</label></td>
                                 <td><input  type="text"></td>
                             </tr>
                             <tr>
@@ -131,7 +163,7 @@
                             <td><input  type="text" placeholder="%"></td>
                         </tr>
                         <tr>
-                            <td>Intermediate</td>
+                            <td><label>Intermediate</label></td>
                             <td><input  type="text" placeholder="%"></td>
                         </tr>
                         <tr>
