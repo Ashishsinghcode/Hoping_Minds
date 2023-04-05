@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    .main_block{
+        border: 2px solid red;
+        height: 300px;
+        width: 1000px;
+        background-color: aqua;
+        display: flex;
+        /* justify-content: center; */
+        /* verticle properties */
+        /* align-items: center; */
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+    }
+    .item_block{
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        margin: 20px;
+        text-align: center;
+    }
+    #blo2{
+        position: relative;
+        left: 500px;
+    }
+</style>
+<body>
+    <div class="main_block">
+        <div class="item_block" id="blo1">
+            Block-1
+        </div>
+        <div class="item_block" id="blo2">
+            Block-2
+        </div>
+        <div class="item_block">
+            Block-3
+        </div>
+        <div class="item_block">
+            Block-4
+        </div>
+    </div>
+</body>
+</html>
