@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <h1 id="score"></h1>
+</body>
+</html>
+<script>
+    num=Math.floor(Math.random() * 100)
+    console.log(num)
+    val=prompt("Enter a number ")
+    score =100
+    for(i=0;i<=2;i++){
+        
+        if(num != val && i == 2){
+            alert("Oops you lose the game")
+            document.getElementById("score").innerHTML = "Your score is : 0"
+        }
+        else if(num != val && val < num){
+            alert("Oops you entered a small number")
+            score = score-1
+            val=prompt("Enter a number ")
+        }
+        else if(num != val && val > num ){
+            alert("Oops you entered a Large number")
+            score = score-1
+            val=prompt("Enter a number ")
+        }
+        else {
+            alert("Congratulation you are the winner")
+            document.getElementById("score").innerHTML = "Your score is :"+score
+            
+            break;
+            
+        }
+    }
+    
+</script>
