@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<style>
+    #main-frame{
+       
+        position: absolute;
+        text-align: center;
+    }
+    #title{
+        font-family: 'Pacifico', cursive;
+    }
+    #para{
+        font-family: 'Pacifico', cursive;
+
+    }
+    /* p{
+       
+        background: -webkit-linear-gradient(red,yellow,green,blue,purple);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Pacifico', cursive;
+
+    } */
+    @keyframes example {
+        from {background: linear-gradient(to right, red,yellow,green,blue);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;}
+        to {background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;}
+    }
+    @keyframes images {
+        from{width:10px;height: 10px;}
+        to{width:400px;height: 600px;}
+        
+    }
+</style>
+<body>
+    <div class="card"style="width:400px; height:600px" id="main-frame">
+        <img class="card-img-top" id="picture" src="../Images/happy.jpg" alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title" id="title">Birthday Card </h5>
+        <p class="card-text" id="para">Wishing you a day filled with happiness and a year filled with joy.</p>
+        <button type="button" id="button" class="btn btn-danger" onclick="anime()">Click here</button>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    function anime(){
+        document.getElementById("picture").src="../images/bday-541.gif"
+        document.getElementById("para").style.animationName="example"
+        document.getElementById("para").style.animationDuration="3s" 
+        document.getElementById("title").style.animationName="example"
+        document.getElementById("title").style.animationDuration="3s"
+        document.getElementById("main-frame").style.animationName="images"
+        document.getElementById("main-frame").style.animationDuration="3s"
+        document.getElementById("title").style.animationFillMode="forwards"
+        document.getElementById("main-frame").style.animationFillMode="forwards"
+        document.getElementById("para").style.animationFillMode="forwards"
+        
+       
+    }
+</script>

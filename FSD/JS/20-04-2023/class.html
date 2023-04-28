@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .yellow{
+        width: 100px;
+    }
+    .red{
+        color: red;
+    }
+    
+</style>
+<body>
+    <div>
+        <span>
+            <label for="">Write about your self in 10 seconds</label>
+            <input type="text" name="" id="text" placeholder="Write about your self">
+        </span>
+    </div>
+</body>
+</html>
+<script>
+    setTimeout(function(){
+        document.getElementById('text').style.backgroundColor="red"
+        alert("Oops timeout!!!")
+    },10000)
+</script>

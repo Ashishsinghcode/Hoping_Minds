@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+        a=prompt("Enter the number of trail")
+        if(a < 0){
+            console.error("Can't feed negative value")
+        }
+        else{
+            if(a <= 7 ){
+                x=7-a
+                alert("You have"+" "+x+" "+"attempt remaining")
+                val()
+            }
+            else{
+                alert("Oops you miss the chance")
+                location.href="https://www.google.com/"
+                val()
+            }
+        }
+        function val(){
+            y=confirm("Do you want to see again ?")
+            if(y == true){
+                a=prompt("Enter the number of trail")
+                if(a < 0){
+                    console.error("Can't feed negative value")
+                }
+                else{
+                    if(a <= 7 ){
+                        x=7-a
+                        alert("You have"+x+"attempt remaining")
+                        val()
+                    }
+                    else{
+                        alert("Oops you miss the chance")
+                        location.href="https://www.google.com/"
+                        val()
+                    }
+                }
+            }
+}
+    
+
+</script>
