@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Handling</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // let user= new FormData()
+        
+    //     user.append("email","Ashish9471847@gmail.com")
+    //     user.append("title","Hello")
+    //     user.append("description","I am Ashish")
+    let user={
+        email:'Ashish9471847@gmail.com',
+        title:'Hello',
+        description:'I am Ashish',
+    }
+    let option ={
+        method:'POST',
+        body:JSON.stringify(user),
+        headers:{
+            'Content-Type':'application/json'
+        },
+    };
+    console.log(option)
+    console.log(JSON.stringify(user))
+        fetch("http://localhost:3000/ct/mailer",option)
+        .then(response=>{
+        console.log(response.json())
+        })
+        .catch((err)=>{
+        console.log(err)
+        })
+    // try{
+    //     console.log("Hello")
+    //     console.log("How are u?")
+    //     console.log("Hello")
+    // }
+    // catch(error){
+    //     console.log(error)
+    // }
+    //     console.log("Hello")
+    //     console.log("Hello")
+    //     console.log("Hello")
+    //     console.log("Hello")
+    //     console.log("Hello")
+    //     console.log("Hello")
+        
+</script>
