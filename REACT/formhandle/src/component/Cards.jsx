@@ -11,7 +11,7 @@ export default function Cards(props) {
                     {userdata.map((data, index) => {
                         return (
                             <div className='col-md-4 text-center'>
-                                <div key={index} className="card m-3">
+                                <div key={index} className="card m-3 border-5 border-primary rounded">
                                     <div className="card-body">
                                         <h2 className="card-title text-danger">Name : {data.name}</h2>
                                         <h5 className="card-subtitle mb-2 text-muted">Address : {data.address}</h5>
